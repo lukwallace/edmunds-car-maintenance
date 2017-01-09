@@ -7,9 +7,9 @@ If you're still reading and haven't lost interest in me as a candidate yet -- th
 
 # If I kept working on it:
 > under the assumption that we're still doing Vanilla JS, no frameworks, 
-> and we're not setting up a server to use the api key instead
+> and we're not setting up a server to use the API key instead
 
-* Add actual output to the screen instead of logging the schedule on console.
+* Add actual output to the screen instead of logging the schedule on the console.
 * The enabling and disabling of select tags currently functions like this:
 ```
   $('.make').prop('disabled', false);
@@ -18,9 +18,9 @@ If you're still reading and haven't lost interest in me as a candidate yet -- th
   $('.engine').prop('disabled', true);
   $('.transmission').prop('disabled', true);
 ```
-and ths kind of code runs on any change event that occurs to any one particular select tag - which is super ugly, but necessary in the case where someone is deep into the tags and changes one of the earlier ones invalidating multiple select tags. Provided time, this developer would likely explore options with bit representation since a series of boolean values could be represented in binary anyway and try to wrap it up in a single line function, in the interest of being DRY.
+and this kind of code runs on any change event that occurs to any one particular select tag - which is super ugly, but necessary in the case where someone is deep into the tags and changes one of the earlier ones invalidating multiple select tags. Provided time, this developer would likely explore options with bit representation since a series of boolean values could be represented in binary anyway and try to wrap it up in a single line function, in the interest of being DRY.
 * Add global variables to hold onto the currently selected year, make, model, etc. instead of using jQuery to access the values from the DOM over and over again. (This choice was somewhat neglected early on because of the fear of obfuscation)
-* The data from the very first API request for a year is cached locally so if someone looks at another year and goes back it doesn't trigger another API req. realizing that's not too common an occurance. Over optimization?
+* The data from the very first API request for a year is cached locally so if someone looks at another year and goes back it doesn't trigger another API request. realizing that's not too common an occurrence. Over optimization?
 * Maybe add promises when API call chaining gets hairy
 * CSS
 

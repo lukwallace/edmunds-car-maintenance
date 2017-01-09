@@ -1,1 +1,3 @@
-# fluffy-dollop
+# Usage instructions
+See config.example.js
+
